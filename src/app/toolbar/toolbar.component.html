@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <button mat-raised-button [matMenuTriggerFor]="menu">Theme</button>
+  <mat-menu #menu="matMenu">
+    <mat-radio-group class="radio-group" [(ngModel)]="theme" (change)="changeTheme($event)">
+      <mat-radio-button value="light">Light</mat-radio-button>
+      <mat-radio-button value="dark">Dark </mat-radio-button>
+    </mat-radio-group>
+  </mat-menu>
+</mat-toolbar>
